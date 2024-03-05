@@ -1,55 +1,54 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
 
 # Flash-Chat
 
-## Our Goal
+## Introduction
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+Flash-Chat is an iOS application designed to facilitate real-time communication between users through chat messages. With its intuitive interface and robust functionality, Flash-Chat offers users a seamless chatting experience.
 
-## What you will create
+## Screenshot
 
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
+<img src="https://github.com/kri-eng/Flash-Chat-App/assets/124129235/9e03c384-2896-4b47-b40a-b0c29da7d0af" alt="Xylophone-Screenshot" width=300>
+<img src="https://github.com/kri-eng/Flash-Chat-App/assets/124129235/e40aad55-b9c0-406e-875f-f3d24efd3b58" alt="Xylophone-Screenshot" width=300>
+<img src="https://github.com/kri-eng/Flash-Chat-App/assets/124129235/c0b8b6e8-c11d-4abf-8244-237fda974a83" alt="Xylophone-Screenshot" width=300>
+<img src="https://github.com/kri-eng/Flash-Chat-App/assets/124129235/575ceda5-f823-47bf-90a4-3c8519ee6ae5" alt="Xylophone-Screenshot" width=300>
 
-## What you will learn
+<img src="https://github.com/kri-eng/Flash-Chat-App/assets/124129235/11ae0045-714e-4501-907e-10cd3b399f0f" alt="Xylophone-Screenshot" width=300>
+<img src="https://github.com/kri-eng/Flash-Chat-App/assets/124129235/aa198797-bf03-4450-b441-e2b09a8be201" alt="Xylophone-Screenshot" width=300>
 
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+<img src="https://github.com/kri-eng/Flash-Chat-App/assets/124129235/346636d0-c08b-452d-94ec-6a0f7cb72ca1" alt="Xylophone-Screenshot" width=300>
+<img src="https://github.com/kri-eng/Flash-Chat-App/assets/124129235/349e888d-501d-415d-a594-25d6a71a4c25" alt="Xylophone-Screenshot" width=300>
 
+## User Interface
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+The application comprises four screens:
 
-```
+1. **Intro Screen:**
+   - Displays the app name label and buttons for registration and login.
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+2. **Register Screen:**
+   - Includes text fields for email and password, and a button for user registration.
 
-![End Banner](Documentation/readme-end-banner.png)
+3. **Login Screen:**
+   - Features text fields for email and password, and a button for user login.
+
+4. **Chat Screen:**
+   - Contains a navigation bar with back button, a table view for displaying chat messages, a text field for entering messages, and a send button.
+
+## Functionality
+
+- **User Authentication:** Utilizes Firebase Authentication for user registration and login.
+- **Real-time Chat:** Facilitates real-time communication between users through chat messages.
+- **Data Storage:** Stores chat messages in Firebase Cloud Firestore.
+- **Dynamic Data Update:** Automatically updates chat messages in real-time using Firebase listeners.
+- **Animated UI:** Implements animations for smoother user experience.
+- **Third-party Libraries:** Integrates third-party libraries using CocoaPods for enhanced functionality.
+- **View Controller Navigation:** Embeds view controllers in a navigation controller for easy navigation between screens.
+
+## Learnings
+
+- Firebase integration for user authentication and data storage.
+- Real-time communication implementation using Firebase.
+- Working with table views and custom table view cells.
+- Incorporating animations for improved user experience.
+- Utilizing third-party libraries with CocoaPods.
+- Navigation controller setup for seamless screen transitions.
